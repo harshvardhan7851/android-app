@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity"
+    android:background="@drawable/custom">
+
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:layout_alignParentBottom="true"
+        android:id="@+id/dasboard_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mbn_circleColor="#004C88"
+        app:mbn_backgroundBottomColor="#D1FAFF"
+        app:mbn_defaultIconColor="#004C88"
+        app:mbn_rippleColor="#2f424242"
+        app:mbn_selectedIconColor="#FFFFFF"
+        app:mbn_shadowColor="#1f212121"/>
+    <RelativeLayout
+        android:id="@+id/dasboard_relative"
+        android:layout_above="@+id/dasboard_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

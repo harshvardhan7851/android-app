@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="@dimen/_5sdp"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:layout_marginVertical="@dimen/_5sdp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/custom_cart_image"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:id="@+id/custom_cart_remove"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/baseline_remove_circle_outline_24"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"/>
+
+            <LinearLayout
+
+                android:layout_toLeftOf="@+id/custom_cart_remove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/custom_cart_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lilita_one"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"/>
+
+                <TextView
+                    android:id="@+id/custom_cart_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lilita_one"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"/>
+
+                <TextView
+                    android:id="@+id/custom_cart_totalprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lilita_one"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/cart_minus"
+                        android:src="@drawable/ic_remove"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"/>
+
+                    <TextView
+                        android:id="@+id/cart_qty"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:fontFamily="@font/lilita_one"
+                        android:text="12"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:id="@+id/cart_add"
+                        android:src="@drawable/add"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
